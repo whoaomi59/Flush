@@ -1,11 +1,16 @@
-import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Galeria from "./view/galeria";
+import Multimedia from "./view/Multimedia";
 
 function App() {
   return (
-    <div className="w-full">
-      <Galeria />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Galeria />} />
+        <Route path="/Multimedia/:id" element={<Multimedia />} />
+        <Route path="*" element={"no fount"} />
+      </Routes>
+    </Router>
   );
 }
 

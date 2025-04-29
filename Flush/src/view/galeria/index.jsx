@@ -34,7 +34,7 @@ export default function Galeria() {
         <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
           {data.map((item) => (
             <a
-              href="javascript:;"
+              href={`/Multimedia/${item.id}`}
               class="relative bg-cover group rounded-3xl bg-center overflow-hidden mx-auto sm:mr-0 xl:mx-auto cursor-pointer"
             >
               <img

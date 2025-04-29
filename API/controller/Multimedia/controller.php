@@ -22,7 +22,7 @@ switch ($request_method) {
 //OK
 function get() {
     global $conn;
-    $result = $conn->query("SELECT * FROM imagenes ORDER by id DESC");
+    $result = $conn->query("SELECT * FROM imagenes where fk_multimedia=2");
 
     $empresas = [];
 
