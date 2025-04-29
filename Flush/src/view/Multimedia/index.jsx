@@ -39,17 +39,6 @@ export default function Multimedia() {
                 src={item.multimedia}
                 alt="Jacket image"
               />
-              <div class="absolute z-10 bottom-3 left-0 mx-3 p-3 bg-white w-[calc(100%-24px)] rounded-xl shadow-sm shadow-transparent transition-all duration-500 group-hover:shadow-indigo-200 group-hover:bg-indigo-50">
-                <div class="flex items-center justify-between mb-2">
-                  <h6 class="font-semibold text-base leading-7 text-black ">
-                    {item.nombre}
-                  </h6>
-                  <h6 class="font-semibold text-base leading-7 text-indigo-600 text-right">
-                    {item.Tipo}
-                  </h6>
-                </div>
-                <p class="text-xs leading-5 text-gray-500">{item.contacto}</p>
-              </div>
             </a>
           ))}
         </div>
