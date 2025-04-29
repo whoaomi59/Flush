@@ -1,8 +1,13 @@
 <?php
-$host = "localhost";
+/* $host = "localhost";
 $user = "root";
 $pass = "";
-$dbname = "flush";
+$dbname = "flush"; */
+
+$host = "asuprocolombiasas.com";
+$user = "sisottsa_hacker";
+$pass = "aAeewMH_WsgE";
+$dbname = "sisottsa_flush";
 
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT); // Muestra errores de MySQL

@@ -9,7 +9,7 @@ export default function Galeria() {
       try {
         setloader(true);
         let response = await axios.get(
-          "http://localhost/Flush/API/controller/datos/controller.php"
+          "https://asuprocolombiasas.com/php/API/controller/datos/controller.php"
         );
         setData(response.data);
         setloader(false);
