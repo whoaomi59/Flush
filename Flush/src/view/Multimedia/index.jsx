@@ -1,15 +1,18 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 
 export default function Multimedia() {
   const [data, setData] = useState([]);
   const [loader, setloader] = useState(false);
+  const { id } = useParams();
+
   useEffect(() => {
     const GetDatos = async () => {
       try {
         setloader(true);
         let response = await axios.get(
-          "https://asuprocolombiasas.com/php/API/controller/Multimedia/controller.php"
+          `/controller/Multimedia/controller.php?id=${id}`
         );
         setData(response.data);
         setloader(false);

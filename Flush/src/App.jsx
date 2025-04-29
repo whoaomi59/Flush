@@ -1,8 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Galeria from "./view/galeria";
 import Multimedia from "./view/Multimedia";
+import axios from "axios";
 
 function App() {
+  //axios.defaults.baseURL = " http://localhost/Apps_Domicilios/API/";
+  axios.defaults.baseURL = "https://asuprocolombiasas.com/php/API/";
+
   return (
     <Router>
       <Routes>

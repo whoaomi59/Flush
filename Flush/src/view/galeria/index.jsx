@@ -8,9 +8,7 @@ export default function Galeria() {
     const GetDatos = async () => {
       try {
         setloader(true);
-        let response = await axios.get(
-          "https://asuprocolombiasas.com/php/API/controller/datos/controller.php"
-        );
+        let response = await axios.get("/controller/datos/controller.php");
         setData(response.data);
         setloader(false);
       } catch (error) {
